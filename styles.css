@@ -26,6 +26,10 @@ html, body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", serif;
+  background-color: var(--Blue800);
+  display: flex;
+  justify-content: center;
 }
 
 img, picture, video, canvas, svg {
@@ -43,4 +47,33 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
+}
+
+/* Typography */
+.text-preset-1 {
+  font-size: 5.5rem; /* 88px  for mobile, switch to 56px for tablet and desktop display */ 
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+.text-preset-2-bold { 
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.text-preset-2-regular {
+  font-size: 1rem; /* 16px */
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.text-preset-3 {
+  font-size: 0.75rem; /* 12px */
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 150%;
 }
