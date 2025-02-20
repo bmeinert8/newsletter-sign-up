@@ -51,7 +51,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Typography */
 .text-preset-1 {
-  font-size: 5.5rem; /* 88px  for mobile, switch to 56px for tablet and desktop display */ 
+  font-size: 38px; /* 56px  for mobile, switch to 88px for tablet and desktop display */ 
   font-weight: bold;
   letter-spacing: 0;
   line-height: 100%;
@@ -77,3 +77,45 @@ p, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
   line-height: 150%;
 }
+
+/* Page Layout */
+.card, .main__content, .main__content__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  align-items: center;
+  background-color: var(--White);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main__content {
+  width: 327px;
+  align-self: flex-start;
+  padding: 2.5rem 1.35rem; /* 40px */
+  gap: 2.5rem; /* 40px */
+}
+
+.main__content__info {
+  gap: 1.5rem; /* 24px */
+}
+
+li {
+  list-style-type: none;
+}
+
+.list-item { 
+  display: flex;
+  gap: 1rem; /* 16px */
+  padding-top: 1rem; /* 16px */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.first {
+  padding-top: 0;
+}
+
+
+
+
