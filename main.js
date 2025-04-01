@@ -29,6 +29,8 @@ signUpForm.addEventListener('submit', function (event) {
     console.log('Email is valid!');
   } else {
     console.log('Email is invalid!');
+    errorMessage.classList.remove('error-hidden');
+    emailInput.classList.add('error-email-input');
   }
 });
 

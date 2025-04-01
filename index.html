@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="card">
+  <div class="card js-card">
     <header class="image__container">
       <img src="./images/illustration-sign-up-mobile.svg" alt="sign up illustration for mobile">
     </header>
@@ -41,7 +41,7 @@
           <div class="email__input__section">
             <div class="form-info">
               <label for="email address" class="text-preset-3">Email address</label>
-              <p class="text-preset-3 error-message js-error-message">
+              <p class="text-preset-3 error-message error-hidden js-error-message">
                 Valid email required
               </p>
             </div>
@@ -55,7 +55,7 @@
   </div>
 
 <!-- Success card -->
-  <div class="success__card">
+  <div class="success__card success-hidden js-success-card">
     <div class="card__content">
       <article class="success__message">
         <img class="success-icon" src="images/icon-success.svg" alt="success checkmark">
@@ -65,7 +65,6 @@
       <section class="button__section">
         <button class="text-preset-2-bold dismiss__button">Dismiss message</button>
       </section>
-      
     </div>
   </div>
   

@@ -94,6 +94,9 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: var(--White);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
+.card-hidden {
+  display: none;
+}
 
 .main__content {
   width: 327px;
@@ -132,6 +135,9 @@ li {
 
 .error-message {
   color: var(--Red);
+}
+
+.error-hidden {
   display: none;
 }
 
@@ -168,7 +174,6 @@ li {
   color: var(--Blue800);
   display: flex;
   justify-content: center;
-  display: none
 }
 
 .card__content {
@@ -194,6 +199,10 @@ li {
 .dismiss__button {
   padding-left: 6.25rem;
   padding-right: 6.25rem; 
+}
+
+.success-hidden {
+  display: none;
 }
 
 
