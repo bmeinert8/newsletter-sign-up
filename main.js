@@ -11,7 +11,8 @@ const emailInput = document.querySelector('.js-email-input');
 const submitButton = document.querySelector('.js-submit-button');
 const errorMessage = document.querySelector('.js-error-message');
 const newsLetterCard = document.querySelector('.js-card');
-const successMessage = document.querySelector('.js-success-card')
+const successCard = document.querySelector('.js-success-card');
+const dismissButton = document.querySelector('.js-dismiss-button');
 
 //Add event listener to form
 signUpForm.addEventListener('submit', function (event) {
@@ -28,7 +29,8 @@ signUpForm.addEventListener('submit', function (event) {
   if(isValidEmail) {
     console.log('Email is valid!');
     newsLetterCard.classList.add('card-hidden');
-    successMessage.classList.remove('success-hidden');
+    successCard.classList.remove('success-hidden');
+    emailInput.value = '';
   } else {
     console.log('Email is invalid!');
     errorMessage.classList.remove('error-hidden');
@@ -42,5 +44,12 @@ function validateEmail(email) {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return emailPattern.test(email) && email !== ''; // Also ensure it's not empty
 }
+
+//Implement step 5
+//Event listener for dismiss button
+dismissButton.addEventListener('click', () => {
+  newsLetterCard.classList.remove('card-hidden');
+  successCard.classList.add('success-hidden');
+});
 
 
