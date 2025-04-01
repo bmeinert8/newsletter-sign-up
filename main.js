@@ -17,10 +17,23 @@ signUpForm.addEventListener('submit', function (event) {
 
   //Get the email value from teh input
   const email = emailInput.value.trim();
-
-  //log the email for testing purposes
   console.log('Email entered:', email);
 
+  // Step 2: validate the email
+  const isValidEmail = validateEmail(email);
+
+  if(isValidEmail) {
+    console.log('Email is valid!');
+  } else {
+    console.log('Email is invalid!');
+  }
 });
+
+//Function to validate email
+function validateEmail(email) {
+  // Basic regex: checks for something@something.something
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email) && email !== ''; // Also ensure it's not empty
+}
 
 
