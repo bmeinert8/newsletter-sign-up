@@ -9,6 +9,9 @@
 const signUpForm = document.querySelector('.js-signup-form');
 const emailInput = document.querySelector('.js-email-input');
 const submitButton = document.querySelector('.js-submit-button');
+const errorMessage = document.querySelector('.js-error-message');
+const newsLetterCard = document.querySelector('.js-card');
+const successMessage = document.querySelector('.js-success-card')
 
 //Add event listener to form
 signUpForm.addEventListener('submit', function (event) {
@@ -32,7 +35,7 @@ signUpForm.addEventListener('submit', function (event) {
 //Function to validate email
 function validateEmail(email) {
   // Basic regex: checks for something@something.something
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return emailPattern.test(email) && email !== ''; // Also ensure it's not empty
 }
 
