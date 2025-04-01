@@ -4,3 +4,23 @@
 //Step 3: If the email is invalid, display the error message and style the input with an error state.
 //Step 4: If tje email is valid, hide form display success message.
 //Step 5: Add functionality to the dismiss button to reset the form.
+
+//Select DOM Elements
+const signUpForm = document.querySelector('.js-signup-form');
+const emailInput = document.querySelector('.js-email-input');
+const submitButton = document.querySelector('.js-submit-button');
+
+//Add event listener to form
+signUpForm.addEventListener('submit', function (event) {
+  // Prevent the form from submitting to a server
+  event.preventDefault();
+
+  //Get the email value from teh input
+  const email = emailInput.value.trim();
+
+  //log the email for testing purposes
+  console.log('Email entered:', email);
+
+});
+
+
