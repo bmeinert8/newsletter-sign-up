@@ -93,7 +93,6 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   background-color: var(--White);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  display: none;
 }
 
 .main__content {
@@ -126,11 +125,27 @@ li {
   gap: 1.5rem; /* 24px */
 }
 
+.form-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message {
+  color: var(--Red);
+  display: none;
+}
+
 .email__input{
   padding: .8rem; /* 16px */
   border: 1px solid var(--Grey);
   border-radius: 10px;
   margin-top: 0.5rem;
+}
+
+.error-email-input {
+  border: 1px solid var(--Red);
+  color: var(--Red);
+  background-color: #ff6b3a2e
 }
 
 .submit__button, .dismiss__button {
@@ -153,6 +168,7 @@ li {
   color: var(--Blue800);
   display: flex;
   justify-content: center;
+  display: none
 }
 
 .card__content {
@@ -164,7 +180,7 @@ li {
 }
 
 .success__message {
- display: flex;
+  display: flex;
   flex-direction: column;
   gap: 2rem; /* 32px */
   margin-bottom: 16.5rem;
