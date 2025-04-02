@@ -31,6 +31,8 @@ signUpForm.addEventListener('submit', function (event) {
     newsLetterCard.classList.add('card-hidden');
     successCard.classList.remove('success-hidden');
     emailInput.value = '';
+    const emailSpan = document.querySelector('.js-email-span');
+    emailSpan.textContent = email;
   } else {
     console.log('Email is invalid!');
     errorMessage.classList.remove('error-hidden');

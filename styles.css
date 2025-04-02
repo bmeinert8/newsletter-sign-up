@@ -161,11 +161,14 @@ li {
   border-radius: 10px;
 }
 
-.submit__button:hover {
+.submit__button:hover, .dismiss__button:hover {
   background: var(--Gradient);
   cursor: pointer;
 }
 
+.desktop__image__container{
+  display: none;
+}
 /* Success Message */
 .success__card {
   background-color: white;

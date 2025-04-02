@@ -1,5 +1,60 @@
 @media (min-width: 768px) {
   .text-preset-1 {
-    font-size: 5.5rem; /* 56px */
+    font-size: 3.5rem; /* 56px */
+  }
+
+  .card {
+    width: 608px;
+    height: 878px;
+    border-radius: 36px;
+    
+  }
+
+  .image__container, .header-image {
+    width: 528px;
+    height: 358px;
+    border-radius: 15px;
+  }
+
+  .main__content {
+    width: 528px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 904px;
+    height: 641px;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image__container {
+    display: none;
+    
+  }
+
+  .desktop__image__container {
+    display: block;
+  }
+
+  .main__content {
+    width: 375px;
+  }
+
+  .success__card {
+    width: 504px;
+    height: 520px;
+    border-radius: 36px;
+  }
+
+  .card__content {
+    margin-top: 3.5rem;
+  }
+
+  .success__message {
+    margin-bottom: 2rem;
   }
 }
