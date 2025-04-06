@@ -21,20 +21,19 @@ signUpForm.addEventListener('submit', function (event) {
 
   //Get the email value from teh input
   const email = emailInput.value.trim();
-  console.log('Email entered:', email);
 
   // Step 2: validate the email
   const isValidEmail = validateEmail(email);
 
   if(isValidEmail) {
-    console.log('Email is valid!');
     newsLetterCard.classList.add('card-hidden');
     successCard.classList.remove('success-hidden');
     emailInput.value = '';
     const emailSpan = document.querySelector('.js-email-span');
     emailSpan.textContent = email;
+    errorMessage.classList.add('error-hidden');
+    emailInput.classList.remove('error-email-input');
   } else {
-    console.log('Email is invalid!');
     errorMessage.classList.remove('error-hidden');
     emailInput.classList.add('error-email-input');
   }
