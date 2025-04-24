@@ -59,4 +59,4 @@ In future iterations, I’d like to:
 
 - **Name:** Brian Meinert
 - **Frontend Mentor:** [@bmeinert8](https://www.frontendmentor.io/profile/bmeinert8) 
-- **GitHub:** [yourusername](https://github.com/bmeinert8)
+- **GitHub:** [bmeinert8](https://github.com/bmeinert8)
